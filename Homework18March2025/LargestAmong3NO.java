@@ -3,7 +3,7 @@
 public class LargestAmong3NO {
 	public static void main(String[] args) {
 		int num1 = 37;
-		int num2 = 35;
+		int num2 = 37;
 		int num3 = 36;
 
 		if(num1 > num2) {

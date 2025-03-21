@@ -1,1 +1,6 @@
 PractiseSheet.lnk
+*.class
+*.jar
+bin/
+target/
+.png
