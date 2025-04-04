@@ -1,22 +1,17 @@
 // Write a program to check whether a number is palindrome or not.
 public class IsPalindrome {
-
 	public static void main(String[] args) {
-		int number = 113;
-		int num = number;
-	
+		int num = 12321;
 		int reverse = 0;
-		
-		while(num > 0){
+		for(int tmp = num; tmp > 0; tmp /= 10) {
 			reverse *= 10;
-			reverse += num % 10;
-			num /= 10;
+			reverse += tmp % 10;
 		}
-		if(reverse == number) {
-			System.out.println("Palindrome");
+		if(num == reverse) {
+			System.out.println(num + " is palindrome");
 		}
 		else {
-			System.out.println("Not a Palindrome");
+			System.out.println(num + " is not palindrome");
 		}
 	}
 }
