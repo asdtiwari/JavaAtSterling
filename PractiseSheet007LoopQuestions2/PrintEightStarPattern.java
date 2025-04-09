@@ -1,5 +1,5 @@
-/* Write a program to print Eight with Star Pattern ?
-  * * * 
+/* Write a program to print Eight with Star Pattern? 
+  * * *
 *       *
 *       *
 *       *
@@ -9,17 +9,18 @@
 *       *
   * * *
 */
+
 public class PrintEightStarPattern {
 	public static void main(String[] args) {
+		int n = 5;
+		int totalRow = 2 * n;
 		int row = 1;
-		int end = 10;
-		int extra = 2 * end - 1;
-		while(row <= extra) {
+		while(row < totalRow) {
 			int col = 1;
-			while(col <= end) {
+			while(col <= n) {
 				if(row == 1) {
-					if(col != 1) {
-						if(col != end) {
+					if(col > 1) {
+						if(col < n) {
 							System.out.print("* ");
 						}
 						else {
@@ -30,9 +31,9 @@ public class PrintEightStarPattern {
 						System.out.print("  ");
 					}
 				}
-				else if(row == end) {
-					if(col != 1) {
-						if(col != end) {
+				else if(row == n) {
+					if(col > 1) {
+						if(col < n) {
 							System.out.print("* ");
 						}
 						else {
@@ -43,9 +44,9 @@ public class PrintEightStarPattern {
 						System.out.print("  ");
 					}
 				}
-				else if(row == extra) {
-					if(col != 1) {
-						if(col != end) {
+				else if(row == totalRow - 1) {
+					if(col > 1) {
+						if(col < n) {
 							System.out.print("* ");
 						}
 						else {
@@ -59,7 +60,7 @@ public class PrintEightStarPattern {
 				else if(col == 1) {
 					System.out.print("* ");
 				}
-				else if(col == end) {
+				else if(col == n) {
 					System.out.print("* ");
 				}
 				else {
@@ -72,4 +73,3 @@ public class PrintEightStarPattern {
 		}
 	}
 }
-					
