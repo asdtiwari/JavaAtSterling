@@ -1,9 +1,9 @@
-/* Write a program to print all Prime numbers between 1 to 100. */
-public class PrintAllPrimeNumbersBetween1To100 {
+/* Write a program to find sum of all Prime numbers between 1 to 100. */
+public class SumAllPrimeNumbersBetween1To100 {
 	public static void main(String[] args) {
 
-		System.out.println("Prime Numbers between 1 to 100");
-
+		System.out.print("Sum of Prime Numbers between 1 to 100 ");
+		int sum = 0;
 		for(int i = 1; i <= 100; ++i) {
 			if(i == 1) {
 				continue;
@@ -16,8 +16,9 @@ public class PrintAllPrimeNumbersBetween1To100 {
 				}
 			}
 			if(isPrime) {
-				System.out.println(i);
+				sum = sum + i;
 			}
 		}
+		System.out.println(sum);
 	}
 }

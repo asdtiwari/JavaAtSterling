@@ -1,20 +1,24 @@
 /* Write a program to find all prime factors of a number. */
 public class PrimeFactorsOfNumber {
 	public static void main(String[] args) {
-		int num = 100;
-		System.out.println("Prime factors of " + num + " is \n1");
-		int fact = 2;
-		int prev = 1;
-		while(num > fact) {
-			if(num % fact == 0) {
-				num = num / fact;
-				if(prev != fact) {
-					System.out.println(fact);
+
+		int num = 17;
+
+		System.out.print("All prime factors of " + num + " are ");
+		for(int i = 2; i <= num; ++i) {
+			if(num % i == 0) {
+				boolean isPrime = true;
+				for(int j = 2, endOfJ = i / 2; j <= endOfJ; ++j) {
+					if(i % j == 0) {
+						isPrime = false;
+						break;
+					}
 				}
-				prev = fact;
-			} else {
-				++fact;
+				if(isPrime) {
+					System.out.print(i + " ");
+				}
 			}
-		}		
+		}
+		System.out.println();
 	}
 }
