@@ -1,10 +1,7 @@
-Pending Questions: 35
-
-Hello World Program In 25 Different Style
-	19 Questions Left
+Pending Questions: 10
 
 Loop Questions-3.pdf
-	Questions: 19, 44, 49, 51
+	Questions: 19, 44
 
 Loop Questions-4.pdf
-	Questions: 16, 38, 39 - 48 
+	Questions: 16, 38, 41, 44 - 48
