@@ -1,7 +1,10 @@
-Pending Questions: 10
+Pending Questions: 112
 
 Loop Questions-3.pdf
 	Questions: 19, 44
 
 Loop Questions-4.pdf
 	Questions: 16, 38, 41, 44 - 48
+
+String Practice Sheet-2.pdf
+	Questions: 1-102

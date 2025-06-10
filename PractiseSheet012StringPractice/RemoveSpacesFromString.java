@@ -2,11 +2,13 @@
 public class RemoveSpacesFromString {
 	public static void main(String[] args) {
 		String str = "Java    is a programming language an it is easy to learn";
-		String[] words = str.split(" ");
-		str = "";
-		for(int i = 0; i < words.length; ++i) {
-			str = str + words[i];
+		String ans = "";
+		for(int i = 0, len = str.length(); i < len; ++i) {
+			char ch = str.charAt(i);
+			if(ch != ' ') {
+				ans = ans + ch;
+			}
 		}
-		System.out.println("String after removing spaces \n" + str);
+		System.out.println(ans);
 	}
 }

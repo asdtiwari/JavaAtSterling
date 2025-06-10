@@ -2,11 +2,13 @@
 public class RemoveCharacterFromString {
 	public static void main(String[] args) {
 		String str = "Java is a programming languages and it is easy to learn";
-		String[] strArr = str.split("i");
-		str = "";
-		for(int i = 0; i < strArr.length; ++i) {
-			str = str + strArr[i];
+		String ans = "";
+		for(int i = 0, len = str.length(); i < len; ++i) {
+			char ch = str.charAt(i);
+			if(ch != 'i') {
+				ans = ans + ch;
+			}
 		}
-		System.out.println(str);
+		System.out.println(ans);
 	}
 }
