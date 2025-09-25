@@ -1,4 +1,4 @@
-Pending Questions: 112
+Total Remaining: 201
 
 Loop Questions-3.pdf
 	Questions: 19, 44
@@ -9,5 +9,11 @@ Loop Questions-4.pdf
 String Practice Sheet-2.pdf
 	Questions: 1-102
 
-Homework20250710CommandLineArgs
-	Questions: 10 Questions
+Array Practice Sheet-0.pdf
+	Questions: 1-11
+
+Array Practice Sheet-1.pdf
+	Questions: 1-22
+
+Array Practice Sheet-2.pdf
+	Questions: 1-56
